@@ -33,7 +33,7 @@ export default function Search() {
         placeholder="Address, transaction hash, block number"
         helperText={
           isError
-            ? "Unknown search term, you sure you have copied the the whole address or transaction hash?"
+            ? "Unknown search term, are you sure you have copied the the whole address or transaction hash?"
             : searchText
             ? `Looks like ${
                 inferredSearchItem === "address" ? "an" : "a"
