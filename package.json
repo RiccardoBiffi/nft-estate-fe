@@ -20,7 +20,7 @@
     "@types/react-dom": "^18.2.6",
     "@usedapp/core": "^1.2.13",
     "alchemy-sdk": "^2.9.2",
-    "ethers": "^6.8.1",
+    "ethers": "^5.7.2",
     "immer": "^10.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
