@@ -38,9 +38,9 @@ function App() {
     <Container maxWidth="lg">
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={activeTab} onChange={handleChange} centered>
-          <Tab label="Latest" />
-          <Tab label="Search" />
-          <Tab label="NFTs" />
+          <Tab label="HOME" />
+          <Tab label="PROJECTS" />
+          <Tab label="MY WALLET" />
         </Tabs>
       </Box>
       <TabPanel value={activeTab} index={0}>
