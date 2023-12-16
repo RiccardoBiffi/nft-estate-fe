@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Box, Container, Tab, Tabs } from "@mui/material";
-import Latest from "./components/latest/Latest";
+import { Box, Container, Stack, Tab, Tabs } from "@mui/material";
+import Home from "./components/home/Home";
 import Search from "./components/search/Search";
 import SearchNFTs from "./components/nfts/SearchNFTs";
+import BuyBrick from "./components/BuyBrick";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -36,21 +37,28 @@ function App() {
 
   return (
     <Container maxWidth="lg">
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Stack direction={"row"} sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={activeTab} onChange={handleChange} centered>
           <Tab label="HOME" />
           <Tab label="PROJECTS" />
           <Tab label="MY WALLET" />
+          <Tab label="DOCUMENTATION" />
         </Tabs>
-      </Box>
+        <Box sx={{ margin: "auto 0 auto auto" }}>
+          <BuyBrick />
+        </Box>
+      </Stack>
       <TabPanel value={activeTab} index={0}>
-        <Latest />
+        <Home />
       </TabPanel>
       <TabPanel value={activeTab} index={1}>
         <Search />
       </TabPanel>
       <TabPanel value={activeTab} index={2}>
         <SearchNFTs />
+      </TabPanel>
+      <TabPanel value={activeTab} index={3}>
+        Documentation link
       </TabPanel>
     </Container>
   );
