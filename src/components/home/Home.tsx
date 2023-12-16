@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import styled from "@emotion/styled";
 
-export default function Latest() {
+export default function Home() {
   const [latestBlock, handleRefresh] = useLatestBlock(false);
   const blockNumber = 10;
 

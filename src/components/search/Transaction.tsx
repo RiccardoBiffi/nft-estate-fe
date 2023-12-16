@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTransaction } from "../../services";
-import TransactionInfo from "../latest/TransactionInfo";
+import TransactionInfo from "../home/TransactionInfo";
 
 export default function Transaction({
   hash,

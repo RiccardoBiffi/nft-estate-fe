@@ -1,7 +1,7 @@
 import { Box, Stack, TextField } from "@mui/material";
 import { useState } from "react";
-import BlockInfo from "../latest/BlockInfo";
-import Transactions from "../latest/Transactions";
+import BlockInfo from "../home/BlockInfo";
+import Transactions from "../home/Transactions";
 import Account from "./Account";
 import Transaction from "./Transaction";
 
